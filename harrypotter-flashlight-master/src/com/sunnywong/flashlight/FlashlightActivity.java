@@ -20,7 +20,7 @@ import android.view.WindowManager;
 import android.widget.ToggleButton;
 
 //FlashlightActivity is a class that inherits from Activity (Activity is superclass)
-public class FlashlightActivity extends Activity implements OnClickListener{
+public class FlashlightActivity extends Activity implements OnClickListener
 	
     private static Camera camera;
     private static Parameters parameters;
@@ -152,6 +152,6 @@ public class FlashlightActivity extends Activity implements OnClickListener{
 
 	public void surfaceDestroyed(SurfaceHolder holder) {
 	}
-	///SURFACE 
+	///SURFACE .......
 
 }

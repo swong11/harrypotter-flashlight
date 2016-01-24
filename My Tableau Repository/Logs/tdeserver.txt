@@ -1,0 +1,814 @@
+2016-01-23 18:25:02.952 (0x7fff750ff000): -----------------------------------------------------------------------------
+2016-01-23 18:25:02.952 (0x7fff750ff000): Initializing fault reporting
+2016-01-23 18:25:02.952 (0x7fff750ff000): Fault reporting log pathname: /Users/sunnywong/Documents/My Tableau Repository/Logs/tdeserver64-error00000514.log
+2016-01-23 18:25:02.956 (0x7fff750ff000): -----------------------------------------------------------------------------
+2016-01-23 18:25:02.956 (0x7fff750ff000): argv[0]="/Applications/Tableau.app/Contents/MacOS/tdeserver64"
+2016-01-23 18:25:02.956 (0x7fff750ff000): argv[1]="--callback"
+2016-01-23 18:25:02.956 (0x7fff750ff000): argv[2]="tab.tcp://[::1]:60766"
+2016-01-23 18:25:02.956 (0x7fff750ff000): argv[3]="--listen"
+2016-01-23 18:25:02.956 (0x7fff750ff000): argv[4]="tab.tcp://:auto"
+2016-01-23 18:25:02.956 (0x7fff750ff000): argv[5]="--log"
+2016-01-23 18:25:02.956 (0x7fff750ff000): argv[6]="/Users/sunnywong/Documents/My Tableau Repository/Logs/tdeserver.txt"
+2016-01-23 18:25:02.956 (0x7fff750ff000): argv[7]="--desktop"
+2016-01-23 18:25:02.956 (0x7fff750ff000): pid=1300
+2016-01-23 18:25:02.957 (0x7fff750ff000): Machine Configuration
+2016-01-23 18:25:02.957 (0x7fff750ff000):   Max Descriptors: 10240
+2016-01-23 18:25:02.957 (0x7fff750ff000): Vectorization Support
+2016-01-23 18:25:02.957 (0x7fff750ff000):   Supports SSE:    Yes
+2016-01-23 18:25:02.957 (0x7fff750ff000):   Supports SSE2:   Yes
+2016-01-23 18:25:02.957 (0x7fff750ff000):   Supports SSE3:   Yes
+2016-01-23 18:25:02.957 (0x7fff750ff000):   Supports SSE4.1: Yes
+2016-01-23 18:25:02.957 (0x7fff750ff000):   Supports SSE4.2: Yes
+2016-01-23 18:25:02.957 (0x7fff750ff000):   Supports AVX:    Yes
+2016-01-23 18:25:02.957 (0x7fff750ff000):   Supports AVX2:   Yes
+2016-01-23 18:25:02.957 (0x7fff750ff000): Adjusted Parallelism Values
+2016-01-23 18:25:02.957 (0x7fff750ff000):   CPUs available to process: 4
+2016-01-23 18:25:02.957 (0x7fff750ff000):   max-concurrency:           2
+2016-01-23 18:25:02.957 (0x7fff750ff000):   query-parallelism:         2
+2016-01-23 18:25:02.957 (0x7fff750ff000):   min-query-parallelism:     2
+2016-01-23 18:25:02.958 (0x7fff750ff000): tdeserver: server listening for incoming connections at: tab.tcp://[::1]:60767
+2016-01-23 18:25:02.958 (0x7fff750ff000): tdeserver: accepting new connection
+2016-01-23 18:25:02.958 (0x7fff750ff000): tdeserver: new connection, connection=::1:60767->::1:60769
+2016-01-23 18:25:02.958 (0x7000012ac000): beginthread: recv, connection=::1:60767->::1:60769
+2016-01-23 18:25:02.958 (0x7000016af000): beginthread: send, connection=::1:60767->::1:60769
+2016-01-23 18:25:02.959 (0x7000012ac000): tdeserver: open session, connection=::1:60767->::1:60769, sess_guid=1
+2016-01-23 18:25:02.960 (0x700000aa6000): Session1: QueryExecute:
+2016-01-23 18:25:02.960 (0x700000aa6000): (database "/var/folders/g_/_b83ybxj6h1bmn_jljc0y_9r0000gn/T/tableau-temp/1267904186/Data/Extracts/dataengine_42020_789079537040.tde")
+2016-01-23 18:25:02.963 (0x700000aa6000): Compiling query with Memory Budget=17179869184
+2016-01-23 18:25:02.963 (0x700000aa6000): Session1: QueryExecute: OK, Elapsed time:0.003s, Compilation time:0.003s, Execution time:0.000s
+2016-01-23 18:25:02.963 (0x7000012ac000): tdeserver: open session, connection=::1:60767->::1:60769, sess_guid=2
+2016-01-23 18:25:02.992 (0x700000ea9000): Session1: QueryExecute:
+2016-01-23 18:25:02.992 (0x700000ea9000): (show schemas)
+2016-01-23 18:25:02.992 (0x700000ea9000): Compiling query with Memory Budget=17179869184
+2016-01-23 18:25:02.994 (0x700000ea9000): Session1: QueryExecute: OK rowset_guid=1 n_columns=1, Elapsed time:0.002s, Compilation time:0.000s, Execution time:0.002s
+2016-01-23 18:25:02.996 (0x700000aa6000): Session1: RowsetGetValues:
+2016-01-23 18:25:02.996 (0x700000ea9000): Session1: RowsetGetValues:
+2016-01-23 18:25:02.996 (0x700000aa6000): Session1: RowsetClose:
+2016-01-23 18:25:02.998 (0x700000ea9000): Session1: StatementOpen:
+2016-01-23 18:25:02.998 (0x700000aa6000): Session1: StatementPrepare: sess_guid=1 stmt_guid=2
+2016-01-23 18:25:02.998 (0x700000aa6000): (describe [Extract].[Extract])
+2016-01-23 18:25:03.009 (0x700000aa6000): Session1: StatementPrepare: OK
+2016-01-23 18:25:03.009 (0x700000ea9000): Session1: StatementExecute: sess_guid=1 stmt_guid=2
+2016-01-23 18:25:03.009 (0x700000ea9000): Compiling query with Memory Budget=17179869184
+2016-01-23 18:25:03.010 (0x700000ea9000): Session1: StatementExecute: OK rowset_guid=3 n_columns=5, Elapsed time:0.011s, Compilation time:0.011s, Execution time:0.000s
+2016-01-23 18:25:03.010 (0x700000aa6000): Session1: StatementClose: sess_guid=1 stmt_guid=2
+2016-01-23 18:25:03.011 (0x700000ea9000): Session1: RowsetGetProperties:
+2016-01-23 18:25:03.011 (0x700000aa6000): Session1: RowsetClose:
+2016-01-23 18:25:03.437 (0x7000012ac000): tdeserver: open session, connection=::1:60767->::1:60769, sess_guid=3
+2016-01-23 18:25:03.437 (0x700000ea9000): Session3: QueryExecute:
+2016-01-23 18:25:03.437 (0x700000ea9000): (database "/var/folders/g_/_b83ybxj6h1bmn_jljc0y_9r0000gn/T/tableau-temp/1267904186/Data/Extracts/dataengine_42020_795199745371.tde")
+2016-01-23 18:25:03.438 (0x700000ea9000): Compiling query with Memory Budget=17179869184
+2016-01-23 18:25:03.438 (0x700000ea9000): Session3: QueryExecute: OK, Elapsed time:0.001s, Compilation time:0.001s, Execution time:0.000s
+2016-01-23 18:25:03.438 (0x7000012ac000): tdeserver: open session, connection=::1:60767->::1:60769, sess_guid=4
+2016-01-23 18:25:03.440 (0x700000aa6000): Session3: QueryExecute:
+2016-01-23 18:25:03.440 (0x700000aa6000): (show schemas)
+2016-01-23 18:25:03.440 (0x700000aa6000): Compiling query with Memory Budget=17179869184
+2016-01-23 18:25:03.440 (0x700000aa6000): Session3: QueryExecute: OK rowset_guid=1 n_columns=1, Elapsed time:0.001s, Compilation time:0.000s, Execution time:0.001s
+2016-01-23 18:25:03.441 (0x700000ea9000): Session3: RowsetGetValues:
+2016-01-23 18:25:03.441 (0x700000aa6000): Session3: RowsetGetValues:
+2016-01-23 18:25:03.441 (0x700000ea9000): Session3: RowsetClose:
+2016-01-23 18:25:03.442 (0x700000aa6000): Session3: StatementOpen:
+2016-01-23 18:25:03.442 (0x700000ea9000): Session3: StatementPrepare: sess_guid=3 stmt_guid=2
+2016-01-23 18:25:03.442 (0x700000ea9000): (describe [Extract].[Extract])
+2016-01-23 18:25:03.449 (0x700000ea9000): Session3: StatementPrepare: OK
+2016-01-23 18:25:03.449 (0x700000aa6000): Session3: StatementExecute: sess_guid=3 stmt_guid=2
+2016-01-23 18:25:03.449 (0x700000aa6000): Compiling query with Memory Budget=17179869184
+2016-01-23 18:25:03.449 (0x700000aa6000): Session3: StatementExecute: OK rowset_guid=3 n_columns=9, Elapsed time:0.007s, Compilation time:0.007s, Execution time:0.000s
+2016-01-23 18:25:03.450 (0x700000ea9000): Session3: StatementClose: sess_guid=3 stmt_guid=2
+2016-01-23 18:25:03.451 (0x700000aa6000): Session3: RowsetGetProperties:
+2016-01-23 18:25:03.451 (0x700000ea9000): Session3: RowsetClose:
+2016-01-23 18:25:03.455 (0x7000012ac000): tdeserver: open session, connection=::1:60767->::1:60769, sess_guid=5
+2016-01-23 18:25:03.455 (0x700000aa6000): Session5: QueryExecute:
+2016-01-23 18:25:03.455 (0x700000aa6000): (database "/var/folders/g_/_b83ybxj6h1bmn_jljc0y_9r0000gn/T/tableau-temp/1267904186/Data/Extracts/dataengine_42020_795741076392.tde")
+2016-01-23 18:25:03.456 (0x700000aa6000): Compiling query with Memory Budget=17179869184
+2016-01-23 18:25:03.456 (0x700000aa6000): Session5: QueryExecute: OK, Elapsed time:0.001s, Compilation time:0.001s, Execution time:0.000s
+2016-01-23 18:25:03.456 (0x7000012ac000): tdeserver: open session, connection=::1:60767->::1:60769, sess_guid=6
+2016-01-23 18:25:03.457 (0x700000ea9000): Session5: QueryExecute:
+2016-01-23 18:25:03.457 (0x700000ea9000): (show schemas)
+2016-01-23 18:25:03.457 (0x700000ea9000): Compiling query with Memory Budget=17179869184
+2016-01-23 18:25:03.458 (0x700000ea9000): Session5: QueryExecute: OK rowset_guid=1 n_columns=1, Elapsed time:0.001s, Compilation time:0.000s, Execution time:0.001s
+2016-01-23 18:25:03.459 (0x700000aa6000): Session5: RowsetGetValues:
+2016-01-23 18:25:03.459 (0x700000ea9000): Session5: RowsetGetValues:
+2016-01-23 18:25:03.459 (0x700000aa6000): Session5: RowsetClose:
+2016-01-23 18:25:03.460 (0x700000ea9000): Session5: StatementOpen:
+2016-01-23 18:25:03.460 (0x700000aa6000): Session5: StatementPrepare: sess_guid=5 stmt_guid=2
+2016-01-23 18:25:03.460 (0x700000aa6000): (describe [Extract].[Extract])
+2016-01-23 18:25:03.466 (0x700000aa6000): Session5: StatementPrepare: OK
+2016-01-23 18:25:03.467 (0x700000ea9000): Session5: StatementExecute: sess_guid=5 stmt_guid=2
+2016-01-23 18:25:03.467 (0x700000ea9000): Compiling query with Memory Budget=17179869184
+2016-01-23 18:25:03.467 (0x700000ea9000): Session5: StatementExecute: OK rowset_guid=3 n_columns=9, Elapsed time:0.007s, Compilation time:0.006s, Execution time:0.000s
+2016-01-23 18:25:03.468 (0x700000aa6000): Session5: StatementClose: sess_guid=5 stmt_guid=2
+2016-01-23 18:25:03.469 (0x700000ea9000): Session5: RowsetGetProperties:
+2016-01-23 18:25:03.469 (0x700000aa6000): Session5: RowsetClose:
+2016-01-23 18:25:03.474 (0x7000012ac000): tdeserver: open session, connection=::1:60767->::1:60769, sess_guid=7
+2016-01-23 18:25:03.474 (0x700000ea9000): Session7: QueryExecute:
+2016-01-23 18:25:03.474 (0x700000ea9000): (database "/var/folders/g_/_b83ybxj6h1bmn_jljc0y_9r0000gn/T/tableau-temp/1267904186/Data/Extracts/dataengine_42020_796656828701.tde")
+2016-01-23 18:25:03.475 (0x700000ea9000): Compiling query with Memory Budget=17179869184
+2016-01-23 18:25:03.475 (0x700000ea9000): Session7: QueryExecute: OK, Elapsed time:0.001s, Compilation time:0.001s, Execution time:0.000s
+2016-01-23 18:25:03.475 (0x7000012ac000): tdeserver: open session, connection=::1:60767->::1:60769, sess_guid=8
+2016-01-23 18:25:03.476 (0x700000aa6000): Session7: QueryExecute:
+2016-01-23 18:25:03.476 (0x700000aa6000): (show schemas)
+2016-01-23 18:25:03.476 (0x700000aa6000): Compiling query with Memory Budget=17179869184
+2016-01-23 18:25:03.477 (0x700000aa6000): Session7: QueryExecute: OK rowset_guid=1 n_columns=1, Elapsed time:0.001s, Compilation time:0.000s, Execution time:0.001s
+2016-01-23 18:25:03.477 (0x700000ea9000): Session7: RowsetGetValues:
+2016-01-23 18:25:03.478 (0x700000aa6000): Session7: RowsetGetValues:
+2016-01-23 18:25:03.478 (0x700000ea9000): Session7: RowsetClose:
+2016-01-23 18:25:03.478 (0x700000aa6000): Session7: StatementOpen:
+2016-01-23 18:25:03.479 (0x700000ea9000): Session7: StatementPrepare: sess_guid=7 stmt_guid=2
+2016-01-23 18:25:03.479 (0x700000ea9000): (describe [Extract].[Extract])
+2016-01-23 18:25:03.485 (0x700000ea9000): Session7: StatementPrepare: OK
+2016-01-23 18:25:03.486 (0x700000aa6000): Session7: StatementExecute: sess_guid=7 stmt_guid=2
+2016-01-23 18:25:03.486 (0x700000aa6000): Compiling query with Memory Budget=17179869184
+2016-01-23 18:25:03.486 (0x700000aa6000): Session7: StatementExecute: OK rowset_guid=3 n_columns=8, Elapsed time:0.007s, Compilation time:0.007s, Execution time:0.000s
+2016-01-23 18:25:03.487 (0x700000ea9000): Session7: StatementClose: sess_guid=7 stmt_guid=2
+2016-01-23 18:25:03.487 (0x700000aa6000): Session7: RowsetGetProperties:
+2016-01-23 18:25:03.487 (0x700000ea9000): Session7: RowsetClose:
+2016-01-23 18:25:03.491 (0x7000012ac000): tdeserver: open session, connection=::1:60767->::1:60769, sess_guid=9
+2016-01-23 18:25:03.492 (0x700000aa6000): Session9: QueryExecute:
+2016-01-23 18:25:03.492 (0x700000aa6000): (database "/var/folders/g_/_b83ybxj6h1bmn_jljc0y_9r0000gn/T/tableau-temp/1267904186/Data/Extracts/dataengine_42020_797469930556.tde")
+2016-01-23 18:25:03.492 (0x700000aa6000): Compiling query with Memory Budget=17179869184
+2016-01-23 18:25:03.492 (0x700000aa6000): Session9: QueryExecute: OK, Elapsed time:0.001s, Compilation time:0.001s, Execution time:0.000s
+2016-01-23 18:25:03.493 (0x7000012ac000): tdeserver: open session, connection=::1:60767->::1:60769, sess_guid=10
+2016-01-23 18:25:03.494 (0x700000ea9000): Session9: QueryExecute:
+2016-01-23 18:25:03.494 (0x700000ea9000): (show schemas)
+2016-01-23 18:25:03.494 (0x700000ea9000): Compiling query with Memory Budget=17179869184
+2016-01-23 18:25:03.495 (0x700000ea9000): Session9: QueryExecute: OK rowset_guid=1 n_columns=1, Elapsed time:0.001s, Compilation time:0.000s, Execution time:0.001s
+2016-01-23 18:25:03.495 (0x700000aa6000): Session9: RowsetGetValues:
+2016-01-23 18:25:03.495 (0x700000ea9000): Session9: RowsetGetValues:
+2016-01-23 18:25:03.496 (0x700000aa6000): Session9: RowsetClose:
+2016-01-23 18:25:03.496 (0x700000ea9000): Session9: StatementOpen:
+2016-01-23 18:25:03.496 (0x700000aa6000): Session9: StatementPrepare: sess_guid=9 stmt_guid=2
+2016-01-23 18:25:03.496 (0x700000aa6000): (describe [Extract].[Extract])
+2016-01-23 18:25:03.503 (0x700000aa6000): Session9: StatementPrepare: OK
+2016-01-23 18:25:03.503 (0x700000ea9000): Session9: StatementExecute: sess_guid=9 stmt_guid=2
+2016-01-23 18:25:03.504 (0x700000ea9000): Compiling query with Memory Budget=17179869184
+2016-01-23 18:25:03.504 (0x700000ea9000): Session9: StatementExecute: OK rowset_guid=3 n_columns=11, Elapsed time:0.007s, Compilation time:0.007s, Execution time:0.000s
+2016-01-23 18:25:03.505 (0x700000aa6000): Session9: StatementClose: sess_guid=9 stmt_guid=2
+2016-01-23 18:25:03.505 (0x700000ea9000): Session9: RowsetGetProperties:
+2016-01-23 18:25:03.506 (0x700000aa6000): Session9: RowsetClose:
+2016-01-23 18:25:03.510 (0x7000012ac000): tdeserver: open session, connection=::1:60767->::1:60769, sess_guid=11
+2016-01-23 18:25:03.511 (0x700000ea9000): Session11: QueryExecute:
+2016-01-23 18:25:03.511 (0x700000ea9000): (database "/var/folders/g_/_b83ybxj6h1bmn_jljc0y_9r0000gn/T/tableau-temp/1267904186/Data/New stocks/Sheet1 (US stocks new).tde")
+2016-01-23 18:25:03.512 (0x700000ea9000): Compiling query with Memory Budget=17179869184
+2016-01-23 18:25:03.512 (0x700000ea9000): Session11: QueryExecute: OK, Elapsed time:0.001s, Compilation time:0.001s, Execution time:0.000s
+2016-01-23 18:25:03.512 (0x7000012ac000): tdeserver: open session, connection=::1:60767->::1:60769, sess_guid=12
+2016-01-23 18:25:03.513 (0x700000aa6000): Session11: QueryExecute:
+2016-01-23 18:25:03.513 (0x700000aa6000): (show schemas)
+2016-01-23 18:25:03.513 (0x700000aa6000): Compiling query with Memory Budget=17179869184
+2016-01-23 18:25:03.514 (0x700000aa6000): Session11: QueryExecute: OK rowset_guid=1 n_columns=1, Elapsed time:0.001s, Compilation time:0.000s, Execution time:0.001s
+2016-01-23 18:25:03.514 (0x700000ea9000): Session11: RowsetGetValues:
+2016-01-23 18:25:03.515 (0x700000aa6000): Session11: RowsetGetValues:
+2016-01-23 18:25:03.515 (0x700000ea9000): Session11: RowsetClose:
+2016-01-23 18:25:03.515 (0x700000aa6000): Session11: StatementOpen:
+2016-01-23 18:25:03.516 (0x700000ea9000): Session11: StatementPrepare: sess_guid=11 stmt_guid=2
+2016-01-23 18:25:03.516 (0x700000ea9000): (describe [Extract].[Extract])
+2016-01-23 18:25:03.522 (0x700000ea9000): Session11: StatementPrepare: OK
+2016-01-23 18:25:03.522 (0x700000aa6000): Session11: StatementExecute: sess_guid=11 stmt_guid=2
+2016-01-23 18:25:03.522 (0x700000aa6000): Compiling query with Memory Budget=17179869184
+2016-01-23 18:25:03.523 (0x700000aa6000): Session11: StatementExecute: OK rowset_guid=3 n_columns=8, Elapsed time:0.007s, Compilation time:0.007s, Execution time:0.000s
+2016-01-23 18:25:03.523 (0x700000ea9000): Session11: StatementClose: sess_guid=11 stmt_guid=2
+2016-01-23 18:25:03.524 (0x700000aa6000): Session11: RowsetGetProperties:
+2016-01-23 18:25:03.524 (0x700000ea9000): Session11: RowsetClose:
+2016-01-23 18:25:03.981 (0x7000012ac000): tdeserver: open session, connection=::1:60767->::1:60769, sess_guid=13
+2016-01-23 18:25:03.981 (0x700000aa6000): Session13: QueryExecute:
+2016-01-23 18:25:03.981 (0x700000aa6000): (database "/var/folders/g_/_b83ybxj6h1bmn_jljc0y_9r0000gn/T/tableau-temp/1267904186/Data/Extracts/dataengine_42020_795199745371.tde")
+2016-01-23 18:25:03.983 (0x700000aa6000): Compiling query with Memory Budget=17179869184
+2016-01-23 18:25:03.983 (0x700000aa6000): Session13: QueryExecute: OK, Elapsed time:0.001s, Compilation time:0.001s, Execution time:0.000s
+2016-01-23 18:25:03.983 (0x7000012ac000): tdeserver: open session, connection=::1:60767->::1:60769, sess_guid=14
+2016-01-23 18:25:03.987 (0x700000ea9000): Session13: StatementOpen:
+2016-01-23 18:25:03.987 (0x700000aa6000): Session13: StatementPrepare: sess_guid=13 stmt_guid=1
+2016-01-23 18:25:03.987 (0x700000aa6000): (restrict
+2016-01-23 18:25:03.987 (0x700000aa6000):   (order
+2016-01-23 18:25:03.987 (0x700000aa6000):     (aggregate
+2016-01-23 18:25:03.987 (0x700000aa6000):       (table [Extract].[Extract])
+2016-01-23 18:25:03.987 (0x700000aa6000):       (
+2016-01-23 18:25:03.987 (0x700000aa6000):         ([State] [State])
+2016-01-23 18:25:03.987 (0x700000aa6000):         )
+2016-01-23 18:25:03.987 (0x700000aa6000):       ()
+2016-01-23 18:25:03.987 (0x700000aa6000):       )
+2016-01-23 18:25:03.987 (0x700000aa6000):     (
+2016-01-23 18:25:03.987 (0x700000aa6000):       ([State] asc)
+2016-01-23 18:25:03.987 (0x700000aa6000):       )
+2016-01-23 18:25:03.987 (0x700000aa6000):     )
+2016-01-23 18:25:03.987 (0x700000aa6000):   ([State])
+2016-01-23 18:25:03.987 (0x700000aa6000):   )
+2016-01-23 18:25:03.987 (0x700000aa6000): 
+2016-01-23 18:25:03.989 (0x700000ea9000): Session3: StatementOpen:
+2016-01-23 18:25:03.989 (0x700000ea9000): Session3: StatementPrepare: sess_guid=3 stmt_guid=4
+2016-01-23 18:25:03.989 (0x700000ea9000): (restrict
+2016-01-23 18:25:03.989 (0x700000ea9000):   (order
+2016-01-23 18:25:03.989 (0x700000ea9000):     (aggregate
+2016-01-23 18:25:03.989 (0x700000ea9000):       (table [Extract].[Extract])
+2016-01-23 18:25:03.989 (0x700000ea9000):       (
+2016-01-23 18:25:03.989 (0x700000ea9000):         ([State] [State])
+2016-01-23 18:25:03.989 (0x700000ea9000):         )
+2016-01-23 18:25:03.989 (0x700000ea9000):       ()
+2016-01-23 18:25:03.989 (0x700000ea9000):       )
+2016-01-23 18:25:03.989 (0x700000ea9000):     (
+2016-01-23 18:25:03.989 (0x700000ea9000):       ([State] asc)
+2016-01-23 18:25:03.989 (0x700000ea9000):       )
+2016-01-23 18:25:03.989 (0x700000ea9000):     )
+2016-01-23 18:25:03.989 (0x700000ea9000):   ([State])
+2016-01-23 18:25:03.989 (0x700000ea9000):   )
+2016-01-23 18:25:03.989 (0x700000ea9000): 
+2016-01-23 18:25:03.999 (0x700000ea9000): Compiling query with DOP=2
+2016-01-23 18:25:04.000 (0x700000ea9000): Session3: StatementPrepare: OK
+2016-01-23 18:25:04.000 (0x700000ea9000): Session3: StatementExecute: sess_guid=3 stmt_guid=4
+2016-01-23 18:25:04.000 (0x700000ea9000): Compiling query with Memory Budget=8589934592
+2016-01-23 18:25:04.002 (0x700000ea9000): Session3: StatementExecute: OK rowset_guid=5 n_columns=1, Elapsed time:0.012s, Compilation time:0.010s, Execution time:0.002s
+2016-01-23 18:25:04.002 (0x700000ea9000): Session3: StatementClose: sess_guid=3 stmt_guid=4
+2016-01-23 18:25:04.003 (0x700000ea9000): Session3: RowsetGetValues:
+2016-01-23 18:25:04.003 (0x700000ea9000): Session3: RowsetGetValues:
+2016-01-23 18:25:04.004 (0x700000ea9000): Session3: RowsetClose:
+2016-01-23 18:25:04.005 (0x700000aa6000): Compiling query with DOP=2
+2016-01-23 18:25:04.006 (0x700000aa6000): Session13: StatementPrepare: OK
+2016-01-23 18:25:04.006 (0x700000ea9000): Session13: StatementExecute: sess_guid=13 stmt_guid=1
+2016-01-23 18:25:04.006 (0x700000ea9000): Compiling query with Memory Budget=17179869184
+2016-01-23 18:25:04.007 (0x700000ea9000): Session13: StatementExecute: OK rowset_guid=2 n_columns=1, Elapsed time:0.019s, Compilation time:0.019s, Execution time:0.001s
+2016-01-23 18:25:04.007 (0x700000aa6000): Session13: StatementClose: sess_guid=13 stmt_guid=1
+2016-01-23 18:25:04.007 (0x700000ea9000): Session13: RowsetGetValues:
+2016-01-23 18:25:04.008 (0x700000aa6000): Session3: StatementOpen:
+2016-01-23 18:25:04.008 (0x700000ea9000): Session13: RowsetGetValues:
+2016-01-23 18:25:04.008 (0x700000aa6000): Session3: StatementPrepare: sess_guid=3 stmt_guid=6
+2016-01-23 18:25:04.008 (0x700000aa6000): (restrict
+2016-01-23 18:25:04.008 (0x700000aa6000):   (aggregate
+2016-01-23 18:25:04.008 (0x700000aa6000):     (table [Extract].[Extract])
+2016-01-23 18:25:04.008 (0x700000aa6000):     (
+2016-01-23 18:25:04.008 (0x700000aa6000):       ([County] [County])
+2016-01-23 18:25:04.008 (0x700000aa6000):       ([State] [State])
+2016-01-23 18:25:04.008 (0x700000aa6000):       )
+2016-01-23 18:25:04.008 (0x700000aa6000):     (
+2016-01-23 18:25:04.008 (0x700000aa6000):       ([avg:Few fruits/veg (% of pop):ok]
+2016-01-23 18:25:04.008 (0x700000aa6000):         (average [Few fruits/veg (% of pop)])
+2016-01-23 18:25:04.008 (0x700000aa6000):         )
+2016-01-23 18:25:04.008 (0x700000aa6000):       ([avg:Not Exercise (% of pop):ok]
+2016-01-23 18:25:04.008 (0x700000aa6000):         (average [Not Exercise (% of pop)])
+2016-01-23 18:25:04.008 (0x700000aa6000):         )
+2016-01-23 18:25:04.008 (0x700000aa6000):       ([avg:Obesity Rate (% of pop):ok]
+2016-01-23 18:25:04.008 (0x700000aa6000):         (average [Obesity Rate (% of pop)])
+2016-01-23 18:25:04.008 (0x700000aa6000):         )
+2016-01-23 18:25:04.008 (0x700000aa6000):       ([avg:Smokers (% of pop):ok]
+2016-01-23 18:25:04.008 (0x700000aa6000):         (average [Smokers (% of pop)])
+2016-01-23 18:25:04.008 (0x700000aa6000):         )
+2016-01-23 18:25:04.008 (0x700000aa6000):       )
+2016-01-23 18:25:04.008 (0x700000aa6000):     )
+2016-01-23 18:25:04.008 (0x700000aa6000):   ([County] [State] [avg:Few fruits/veg (% of pop):ok] [avg:Not Exercise (% of pop):ok] [avg:Obesity Rate (% of pop):ok] [avg:Smokers (% of pop):ok])
+2016-01-23 18:25:04.008 (0x700000aa6000):   )
+2016-01-23 18:25:04.008 (0x700000aa6000): 
+2016-01-23 18:25:04.008 (0x700000ea9000): Session13: RowsetClose:
+2016-01-23 18:25:04.013 (0x700000ea9000): Session13: StatementOpen:
+2016-01-23 18:25:04.013 (0x700000ea9000): Session13: StatementPrepare: sess_guid=13 stmt_guid=3
+2016-01-23 18:25:04.013 (0x700000ea9000): (create table-from-query [TEMP].[#Tableau_7_D03C13CB-A428-409B-9355-ABE458989D88_1_Group]
+2016-01-23 18:25:04.013 (0x700000ea9000):   (top
+2016-01-23 18:25:04.013 (0x700000ea9000):     (restrict
+2016-01-23 18:25:04.013 (0x700000ea9000):       (project
+2016-01-23 18:25:04.013 (0x700000ea9000):         (table [Extract].[Extract])
+2016-01-23 18:25:04.013 (0x700000ea9000):         (
+2016-01-23 18:25:04.013 (0x700000ea9000):           ([Name of State or District of Columbia (group)] [State])
+2016-01-23 18:25:04.013 (0x700000ea9000):           )
+2016-01-23 18:25:04.013 (0x700000ea9000):         )
+2016-01-23 18:25:04.013 (0x700000ea9000):       ([Name of State or District of Columbia (group)] [State])
+2016-01-23 18:25:04.013 (0x700000ea9000):       )
+2016-01-23 18:25:04.013 (0x700000ea9000):     ()
+2016-01-23 18:25:04.013 (0x700000ea9000):     0)
+2016-01-23 18:25:04.013 (0x700000ea9000):   )
+2016-01-23 18:25:04.013 (0x700000ea9000): 
+2016-01-23 18:25:04.015 (0x700000ea9000): Compiling query with DOP=2
+2016-01-23 18:25:04.015 (0x700000ea9000): Session13: StatementPrepare: OK
+2016-01-23 18:25:04.015 (0x700000ea9000): Session13: StatementExecute: sess_guid=13 stmt_guid=3
+2016-01-23 18:25:04.016 (0x700000ea9000): Compiling query with Memory Budget=8589934592
+2016-01-23 18:25:04.017 (0x700000aa6000): Compiling query with DOP=2
+2016-01-23 18:25:04.019 (0x700000ea9000): Session13: StatementExecute: OK, Elapsed time:0.006s, Compilation time:0.002s, Execution time:0.004s
+2016-01-23 18:25:04.020 (0x700000ea9000): Session13: StatementClose: sess_guid=13 stmt_guid=3
+2016-01-23 18:25:04.020 (0x700000aa6000): Session3: StatementPrepare: OK
+2016-01-23 18:25:04.020 (0x700000ea9000): Session3: StatementExecute: sess_guid=3 stmt_guid=6
+2016-01-23 18:25:04.021 (0x700000ea9000): Compiling query with Memory Budget=17179869184
+2016-01-23 18:25:04.021 (0x700000aa6000): Session13: InsertOpen: table="#Tableau_7_D03C13CB-A428-409B-9355-ABE458989D88_1_Group schema="TEMP"
+2016-01-23 18:25:04.021 (0x700000aa6000):   column[0]="Name of State or District of Columbia (group)"
+2016-01-23 18:25:04.021 (0x700000aa6000):   column[1]="State"
+2016-01-23 18:25:04.021 (0x700000aa6000): Session13: InsertGetColumnProperties:
+2016-01-23 18:25:04.021 (0x700000aa6000): Session13: InsertGetColumnProperties:
+2016-01-23 18:25:04.022 (0x700000aa6000): Session13: InsertPutValues:
+2016-01-23 18:25:04.022 (0x700000aa6000): Session13: InsertCommit: insert_guid=4
+2016-01-23 18:25:04.026 (0x700000ea9000): Session3: StatementExecute: OK rowset_guid=7 n_columns=6, Elapsed time:0.017s, Compilation time:0.012s, Execution time:0.005s
+2016-01-23 18:25:04.026 (0x700000ea9000): Session3: StatementClose: sess_guid=3 stmt_guid=6
+2016-01-23 18:25:04.027 (0x700000aa6000): Session13: InsertCommit: OK
+2016-01-23 18:25:04.027 (0x700000ea9000): Session3: RowsetGetValues:
+2016-01-23 18:25:04.027 (0x700000aa6000): Session13: StatementOpen:
+2016-01-23 18:25:04.027 (0x700000aa6000): Session13: StatementPrepare: sess_guid=13 stmt_guid=5
+2016-01-23 18:25:04.027 (0x700000aa6000): (alter column [TEMP].[#Tableau_7_D03C13CB-A428-409B-9355-ABE458989D88_1_Group].[Name of State or District of Columbia (group)] ( ( "encoding" "encoding" ) ( "storagewidth" "0" ) ( "compression" "array" ) ( "comparable" "comparable" ) ) )
+2016-01-23 18:25:04.028 (0x700000aa6000): Session13: StatementPrepare: OK
+2016-01-23 18:25:04.028 (0x700000aa6000): Session13: StatementExecute: sess_guid=13 stmt_guid=5
+2016-01-23 18:25:04.028 (0x700000aa6000): Compiling query with Memory Budget=8589934592
+2016-01-23 18:25:04.029 (0x700000aa6000): Session13: StatementExecute: OK, Elapsed time:0.002s, Compilation time:0.000s, Execution time:0.001s
+2016-01-23 18:25:04.030 (0x700000aa6000): Session13: StatementClose: sess_guid=13 stmt_guid=5
+2016-01-23 18:25:04.031 (0x700000ea9000): Session3: RowsetGetValues:
+2016-01-23 18:25:04.031 (0x700000aa6000): Session13: StatementOpen:
+2016-01-23 18:25:04.032 (0x700000ea9000): Session13: StatementPrepare: sess_guid=13 stmt_guid=6
+2016-01-23 18:25:04.032 (0x700000ea9000): (alter column [TEMP].[#Tableau_7_D03C13CB-A428-409B-9355-ABE458989D88_1_Group].[State] ( ( "encoding" "encoding" ) ( "storagewidth" "0" ) ( "compression" "array" ) ( "comparable" "comparable" ) ) )
+2016-01-23 18:25:04.032 (0x700000ea9000): Session13: StatementPrepare: OK
+2016-01-23 18:25:04.032 (0x700000aa6000): Session13: StatementExecute: sess_guid=13 stmt_guid=6
+2016-01-23 18:25:04.032 (0x700000aa6000): Compiling query with Memory Budget=17179869184
+2016-01-23 18:25:04.032 (0x700000ea9000): Session3: RowsetClose:
+2016-01-23 18:25:04.037 (0x700000aa6000): Session13: StatementExecute: OK, Elapsed time:0.005s, Compilation time:0.000s, Execution time:0.004s
+2016-01-23 18:25:04.037 (0x7000012ac000): tdeserver: open session, connection=::1:60767->::1:60769, sess_guid=15
+2016-01-23 18:25:04.037 (0x700000ea9000): Session13: StatementClose: sess_guid=13 stmt_guid=6
+2016-01-23 18:25:04.038 (0x700000aa6000): Session15: QueryExecute:
+2016-01-23 18:25:04.038 (0x700000aa6000): (database "/var/folders/g_/_b83ybxj6h1bmn_jljc0y_9r0000gn/T/tableau-temp/1267904186/Data/Extracts/dataengine_42020_795199745371.tde")
+2016-01-23 18:25:04.038 (0x7000012ac000): tdeserver: open session, connection=::1:60767->::1:60769, sess_guid=16
+2016-01-23 18:25:04.038 (0x700000ea9000): Session13: InsertClose: insert_guid=4
+2016-01-23 18:25:04.038 (0x700000ea9000): Session13: InsertClose: OK
+2016-01-23 18:25:04.039 (0x700000ea9000): Session16: QueryExecute:
+2016-01-23 18:25:04.039 (0x700000ea9000): (database "/var/folders/g_/_b83ybxj6h1bmn_jljc0y_9r0000gn/T/tableau-temp/1267904186/Data/Extracts/dataengine_42020_795199745371.tde")
+2016-01-23 18:25:04.039 (0x700000aa6000): Compiling query with Memory Budget=8589934592
+2016-01-23 18:25:04.039 (0x700000aa6000): Session15: QueryExecute: OK, Elapsed time:0.002s, Compilation time:0.001s, Execution time:0.000s
+2016-01-23 18:25:04.040 (0x7000012ac000): tdeserver: open session, connection=::1:60767->::1:60769, sess_guid=17
+2016-01-23 18:25:04.040 (0x700000ea9000): Compiling query with Memory Budget=17179869184
+2016-01-23 18:25:04.040 (0x700000ea9000): Session16: QueryExecute: OK, Elapsed time:0.001s, Compilation time:0.001s, Execution time:0.000s
+2016-01-23 18:25:04.041 (0x7000012ac000): tdeserver: open session, connection=::1:60767->::1:60769, sess_guid=18
+2016-01-23 18:25:04.044 (0x700000aa6000): Session13: StatementOpen:
+2016-01-23 18:25:04.044 (0x700000ea9000): Session13: StatementPrepare: sess_guid=13 stmt_guid=7
+2016-01-23 18:25:04.044 (0x700000ea9000): (describe [TEMP].[#Tableau_7_D03C13CB-A428-409B-9355-ABE458989D88_1_Group])
+2016-01-23 18:25:04.044 (0x700000ea9000): Session13: StatementPrepare: OK
+2016-01-23 18:25:04.045 (0x700000aa6000): Session13: StatementExecute: sess_guid=13 stmt_guid=7
+2016-01-23 18:25:04.045 (0x700000aa6000): Compiling query with Memory Budget=17179869184
+2016-01-23 18:25:04.045 (0x700000aa6000): Session13: StatementExecute: OK rowset_guid=8 n_columns=2, Elapsed time:0.000s, Compilation time:0.000s, Execution time:0.000s
+2016-01-23 18:25:04.046 (0x700000ea9000): Session13: StatementClose: sess_guid=13 stmt_guid=7
+2016-01-23 18:25:04.047 (0x700000aa6000): Session13: RowsetGetProperties:
+2016-01-23 18:25:04.047 (0x700000ea9000): Session13: RowsetClose:
+2016-01-23 18:25:04.048 (0x700000aa6000): Session13: StatementOpen:
+2016-01-23 18:25:04.048 (0x700000ea9000): Session13: StatementPrepare: sess_guid=13 stmt_guid=9
+2016-01-23 18:25:04.048 (0x700000ea9000): (sort [TEMP].[#Tableau_7_D03C13CB-A428-409B-9355-ABE458989D88_1_Group]
+2016-01-23 18:25:04.048 (0x700000ea9000):   ( ([Name of State or District of Columbia (group)] asc) ([State] asc) ) )
+2016-01-23 18:25:04.048 (0x700000ea9000): Session13: StatementPrepare: OK
+2016-01-23 18:25:04.049 (0x700000aa6000): Session13: StatementExecute: sess_guid=13 stmt_guid=9
+2016-01-23 18:25:04.049 (0x700000aa6000): Compiling query with Memory Budget=17179869184
+2016-01-23 18:25:04.053 (0x700000aa6000): Session13: StatementExecute: OK, Elapsed time:0.005s, Compilation time:0.000s, Execution time:0.005s
+2016-01-23 18:25:04.054 (0x700000ea9000): Session13: StatementClose: sess_guid=13 stmt_guid=9
+2016-01-23 18:25:04.055 (0x700000aa6000): Session13: StatementOpen:
+2016-01-23 18:25:04.055 (0x700000ea9000): Session13: StatementPrepare: sess_guid=13 stmt_guid=10
+2016-01-23 18:25:04.055 (0x700000ea9000): (describe [TEMP].[#Tableau_7_D03C13CB-A428-409B-9355-ABE458989D88_1_Group])
+2016-01-23 18:25:04.055 (0x700000ea9000): Session13: StatementPrepare: OK
+2016-01-23 18:25:04.056 (0x700000aa6000): Session13: StatementExecute: sess_guid=13 stmt_guid=10
+2016-01-23 18:25:04.056 (0x700000aa6000): Compiling query with Memory Budget=17179869184
+2016-01-23 18:25:04.056 (0x700000aa6000): Session13: StatementExecute: OK rowset_guid=11 n_columns=2, Elapsed time:0.000s, Compilation time:0.000s, Execution time:0.000s
+2016-01-23 18:25:04.056 (0x700000ea9000): Session13: StatementClose: sess_guid=13 stmt_guid=10
+2016-01-23 18:25:04.056 (0x700000aa6000): Session13: RowsetGetProperties:
+2016-01-23 18:25:04.057 (0x700000ea9000): Session13: RowsetClose:
+2016-01-23 18:25:04.058 (0x700000aa6000): Session13: StatementOpen:
+2016-01-23 18:25:04.058 (0x700000ea9000): Session13: StatementPrepare: sess_guid=13 stmt_guid=12
+2016-01-23 18:25:04.058 (0x700000ea9000): (restrict
+2016-01-23 18:25:04.058 (0x700000ea9000):   (order
+2016-01-23 18:25:04.058 (0x700000ea9000):     (aggregate
+2016-01-23 18:25:04.058 (0x700000ea9000):       (project
+2016-01-23 18:25:04.058 (0x700000ea9000):         (table [Extract].[Extract])
+2016-01-23 18:25:04.058 (0x700000ea9000):         (
+2016-01-23 18:25:04.058 (0x700000ea9000):           ([Name of State or District of Columbia (group)]
+2016-01-23 18:25:04.058 (0x700000ea9000):             (lookup
+2016-01-23 18:25:04.058 (0x700000ea9000):               (table [TEMP].[#Tableau_7_D03C13CB-A428-409B-9355-ABE458989D88_1_Group])
+2016-01-23 18:25:04.058 (0x700000ea9000):               ([State])
+2016-01-23 18:25:04.058 (0x700000ea9000):               ([State])
+2016-01-23 18:25:04.058 (0x700000ea9000):               [Name of State or District of Columbia (group)] (to_str null))
+2016-01-23 18:25:04.058 (0x700000ea9000):             )
+2016-01-23 18:25:04.058 (0x700000ea9000):           )
+2016-01-23 18:25:04.058 (0x700000ea9000):         )
+2016-01-23 18:25:04.058 (0x700000ea9000):       (
+2016-01-23 18:25:04.058 (0x700000ea9000):         ([Name of State or District of Columbia (group)] [Name of State or District of Columbia (group)])
+2016-01-23 18:25:04.058 (0x700000ea9000):         )
+2016-01-23 18:25:04.058 (0x700000ea9000):       ()
+2016-01-23 18:25:04.058 (0x700000ea9000):       )
+2016-01-23 18:25:04.058 (0x700000ea9000):     (
+2016-01-23 18:25:04.058 (0x700000ea9000):       ([Name of State or District of Columbia (group)] asc)
+2016-01-23 18:25:04.058 (0x700000ea9000):       )
+2016-01-23 18:25:04.058 (0x700000ea9000):     )
+2016-01-23 18:25:04.058 (0x700000ea9000):   ([Name of State or District of Columbia (group)])
+2016-01-23 18:25:04.058 (0x700000ea9000):   )
+2016-01-23 18:25:04.058 (0x700000ea9000): 
+2016-01-23 18:25:04.062 (0x700000ea9000): TQLExpressionCompiler: Parsed: 6, Folded: 1
+2016-01-23 18:25:04.062 (0x700000ea9000): Compiling query with DOP=2
+2016-01-23 18:25:04.064 (0x700000ea9000): Session13: StatementPrepare: OK
+2016-01-23 18:25:04.064 (0x700000aa6000): Session13: StatementExecute: sess_guid=13 stmt_guid=12
+2016-01-23 18:25:04.064 (0x700000aa6000): Compiling query with Memory Budget=17179869184
+2016-01-23 18:25:04.067 (0x700000aa6000): Session13: StatementExecute: OK rowset_guid=13 n_columns=1, Elapsed time:0.009s, Compilation time:0.006s, Execution time:0.003s
+2016-01-23 18:25:04.068 (0x700000ea9000): Session13: StatementClose: sess_guid=13 stmt_guid=12
+2016-01-23 18:25:04.068 (0x700000aa6000): Session13: RowsetGetValues:
+2016-01-23 18:25:04.068 (0x700000ea9000): Session13: RowsetGetValues:
+2016-01-23 18:25:04.069 (0x700000aa6000): Session13: RowsetClose:
+2016-01-23 18:25:05.707 (0x700000ea9000): Session13: StatementOpen:
+2016-01-23 18:25:05.708 (0x700000aa6000): Session13: StatementPrepare: sess_guid=13 stmt_guid=14
+2016-01-23 18:25:05.708 (0x700000aa6000): (restrict
+2016-01-23 18:25:05.708 (0x700000aa6000):   (aggregate
+2016-01-23 18:25:05.708 (0x700000aa6000):     (project
+2016-01-23 18:25:05.708 (0x700000aa6000):       (table [Extract].[Extract])
+2016-01-23 18:25:05.708 (0x700000aa6000):       (
+2016-01-23 18:25:05.708 (0x700000aa6000):         ([Name of State or District of Columbia (group)]
+2016-01-23 18:25:05.708 (0x700000aa6000):           (lookup
+2016-01-23 18:25:05.708 (0x700000aa6000):             (table [TEMP].[#Tableau_7_D03C13CB-A428-409B-9355-ABE458989D88_1_Group])
+2016-01-23 18:25:05.708 (0x700000aa6000):             ([State])
+2016-01-23 18:25:05.708 (0x700000aa6000):             ([State])
+2016-01-23 18:25:05.708 (0x700000aa6000):             [Name of State or District of Columbia (group)] (to_str null))
+2016-01-23 18:25:05.708 (0x700000aa6000):           )
+2016-01-23 18:25:05.708 (0x700000aa6000):         )
+2016-01-23 18:25:05.708 (0x700000aa6000):       )
+2016-01-23 18:25:05.708 (0x700000aa6000):     (
+2016-01-23 18:25:05.708 (0x700000aa6000):       ([Name of State or District of Columbia (group)] [Name of State or District of Columbia (group)])
+2016-01-23 18:25:05.708 (0x700000aa6000):       ([State] [State])
+2016-01-23 18:25:05.708 (0x700000aa6000):       )
+2016-01-23 18:25:05.708 (0x700000aa6000):     ()
+2016-01-23 18:25:05.708 (0x700000aa6000):     )
+2016-01-23 18:25:05.708 (0x700000aa6000):   ([Name of State or District of Columbia (group)] [State])
+2016-01-23 18:25:05.708 (0x700000aa6000):   )
+2016-01-23 18:25:05.708 (0x700000aa6000): 
+2016-01-23 18:25:05.714 (0x700000aa6000): TQLExpressionCompiler: Parsed: 6, Folded: 1
+2016-01-23 18:25:05.714 (0x700000aa6000): Compiling query with DOP=2
+2016-01-23 18:25:05.716 (0x700000aa6000): Session13: StatementPrepare: OK
+2016-01-23 18:25:05.716 (0x700000ea9000): Session13: StatementExecute: sess_guid=13 stmt_guid=14
+2016-01-23 18:25:05.716 (0x700000ea9000): Compiling query with Memory Budget=17179869184
+2016-01-23 18:25:05.722 (0x700000ea9000): Session13: StatementExecute: OK rowset_guid=15 n_columns=2, Elapsed time:0.013s, Compilation time:0.008s, Execution time:0.005s
+2016-01-23 18:25:05.722 (0x700000aa6000): Session13: StatementClose: sess_guid=13 stmt_guid=14
+2016-01-23 18:25:05.723 (0x700000ea9000): Session13: RowsetGetValues:
+2016-01-23 18:25:05.724 (0x700000aa6000): Session13: RowsetGetValues:
+2016-01-23 18:25:05.725 (0x700000ea9000): Session13: RowsetClose:
+2016-01-23 18:25:05.726 (0x700000aa6000): Session3: StatementOpen:
+2016-01-23 18:25:05.726 (0x700000ea9000): Session3: StatementPrepare: sess_guid=3 stmt_guid=8
+2016-01-23 18:25:05.726 (0x700000ea9000): (create table-from-query [TEMP].[#Tableau_2_074A7A6B-20CF-4FFA-B58A-3B28E81CD56A_1_Group]
+2016-01-23 18:25:05.726 (0x700000ea9000):   (top
+2016-01-23 18:25:05.726 (0x700000ea9000):     (restrict
+2016-01-23 18:25:05.726 (0x700000ea9000):       (project
+2016-01-23 18:25:05.726 (0x700000ea9000):         (table [Extract].[Extract])
+2016-01-23 18:25:05.726 (0x700000ea9000):         (
+2016-01-23 18:25:05.726 (0x700000ea9000):           ([Name of State or District of Columbia (group)] [State])
+2016-01-23 18:25:05.726 (0x700000ea9000):           )
+2016-01-23 18:25:05.726 (0x700000ea9000):         )
+2016-01-23 18:25:05.726 (0x700000ea9000):       ([Name of State or District of Columbia (group)] [State])
+2016-01-23 18:25:05.726 (0x700000ea9000):       )
+2016-01-23 18:25:05.726 (0x700000ea9000):     ()
+2016-01-23 18:25:05.726 (0x700000ea9000):     0)
+2016-01-23 18:25:05.726 (0x700000ea9000):   )
+2016-01-23 18:25:05.726 (0x700000ea9000): 
+2016-01-23 18:25:05.727 (0x7000012ac000): tdeserver: open session, connection=::1:60767->::1:60769, sess_guid=19
+2016-01-23 18:25:05.728 (0x700000aa6000): Session19: QueryExecute:
+2016-01-23 18:25:05.728 (0x700000aa6000): (database "/var/folders/g_/_b83ybxj6h1bmn_jljc0y_9r0000gn/T/tableau-temp/1267904186/Data/Extracts/dataengine_42020_795199745371.tde")
+2016-01-23 18:25:05.729 (0x700000ea9000): Compiling query with DOP=2
+2016-01-23 18:25:05.729 (0x700000aa6000): Compiling query with Memory Budget=8589934592
+2016-01-23 18:25:05.729 (0x700000ea9000): Session3: StatementPrepare: OK
+2016-01-23 18:25:05.729 (0x700000aa6000): Session19: QueryExecute: OK, Elapsed time:0.002s, Compilation time:0.002s, Execution time:0.000s
+2016-01-23 18:25:05.737 (0x700000ea9000): Session3: StatementExecute: sess_guid=3 stmt_guid=8
+2016-01-23 18:25:05.737 (0x700000ea9000): Compiling query with Memory Budget=17179869184
+2016-01-23 18:25:05.737 (0x7000012ac000): tdeserver: open session, connection=::1:60767->::1:60769, sess_guid=20
+2016-01-23 18:25:05.740 (0x700000aa6000): Session19: StatementOpen:
+2016-01-23 18:25:05.740 (0x700000aa6000): Session19: StatementPrepare: sess_guid=19 stmt_guid=1
+2016-01-23 18:25:05.740 (0x700000aa6000): (create table [TEMP].[View#0])
+2016-01-23 18:25:05.740 (0x700000aa6000): Session19: StatementPrepare: OK
+2016-01-23 18:25:05.741 (0x700000aa6000): Session19: StatementExecute: sess_guid=19 stmt_guid=1
+2016-01-23 18:25:05.741 (0x700000aa6000): Compiling query with Memory Budget=8589934592
+2016-01-23 18:25:05.741 (0x700000aa6000): Session19: StatementExecute: OK, Elapsed time:0.000s, Compilation time:0.000s, Execution time:0.000s
+2016-01-23 18:25:05.741 (0x700000aa6000): Session19: StatementClose: sess_guid=19 stmt_guid=1
+2016-01-23 18:25:05.742 (0x700000ea9000): Session3: StatementExecute: OK, Elapsed time:0.007s, Compilation time:0.003s, Execution time:0.005s
+2016-01-23 18:25:05.742 (0x700000aa6000): Session19: StatementOpen:
+2016-01-23 18:25:05.742 (0x700000ea9000): Session4: StatementEstimateProgress:
+2016-01-23 18:25:05.742 (0x700000aa6000): Session19: StatementPrepare: sess_guid=19 stmt_guid=2
+2016-01-23 18:25:05.742 (0x700000aa6000): (create column [TEMP].[View#0].[Name of State or District of Columbia (group)_] ( ( "collation" "binary" ) ( "compression" "heap" ) ( "factory" "varchar" ) ( "ordinal" "0" ) ( "precision" "11" ) ( "scale" "1" ) ( "storagewidth" "8" ) ) )
+2016-01-23 18:25:05.743 (0x700000aa6000): Session19: StatementPrepare: OK
+2016-01-23 18:25:05.743 (0x700000ea9000): Session3: StatementClose: sess_guid=3 stmt_guid=8
+2016-01-23 18:25:05.744 (0x700000aa6000): Session19: StatementExecute: sess_guid=19 stmt_guid=2
+2016-01-23 18:25:05.744 (0x700000aa6000): Compiling query with Memory Budget=17179869184
+2016-01-23 18:25:05.745 (0x700000ea9000): Session3: InsertOpen: table="#Tableau_2_074A7A6B-20CF-4FFA-B58A-3B28E81CD56A_1_Group schema="TEMP"
+2016-01-23 18:25:05.745 (0x700000ea9000):   column[0]="Name of State or District of Columbia (group)"
+2016-01-23 18:25:05.745 (0x700000ea9000):   column[1]="State"
+2016-01-23 18:25:05.746 (0x700000ea9000): Session3: InsertGetColumnProperties:
+2016-01-23 18:25:05.746 (0x700000aa6000): Session19: StatementExecute: OK, Elapsed time:0.003s, Compilation time:0.000s, Execution time:0.002s
+2016-01-23 18:25:05.746 (0x700000ea9000): Session3: InsertGetColumnProperties:
+2016-01-23 18:25:05.746 (0x700000aa6000): Session19: StatementClose: sess_guid=19 stmt_guid=2
+2016-01-23 18:25:05.747 (0x700000ea9000): Session3: InsertPutValues:
+2016-01-23 18:25:05.747 (0x700000aa6000): Session19: StatementOpen:
+2016-01-23 18:25:05.747 (0x700000ea9000): Session3: InsertCommit: insert_guid=9
+2016-01-23 18:25:05.747 (0x700000aa6000): Session19: StatementPrepare: sess_guid=19 stmt_guid=3
+2016-01-23 18:25:05.747 (0x700000aa6000): (create column [TEMP].[View#0].[State_] ( ( "collation" "binary" ) ( "compression" "heap" ) ( "factory" "varchar" ) ( "ordinal" "1" ) ( "precision" "14" ) ( "scale" "1" ) ( "storagewidth" "8" ) ) )
+2016-01-23 18:25:05.748 (0x700000aa6000): Session19: StatementPrepare: OK
+2016-01-23 18:25:05.748 (0x700000aa6000): Session19: StatementExecute: sess_guid=19 stmt_guid=3
+2016-01-23 18:25:05.749 (0x700000aa6000): Compiling query with Memory Budget=8589934592
+2016-01-23 18:25:05.751 (0x700000aa6000): Session19: StatementExecute: OK, Elapsed time:0.002s, Compilation time:0.000s, Execution time:0.002s
+2016-01-23 18:25:05.752 (0x700000aa6000): Session19: StatementClose: sess_guid=19 stmt_guid=3
+2016-01-23 18:25:05.753 (0x700000ea9000): Session3: InsertCommit: OK
+2016-01-23 18:25:05.754 (0x700000ea9000): Session3: StatementOpen:
+2016-01-23 18:25:05.754 (0x700000aa6000): Session19: InsertOpen: table="View#0 schema="TEMP"
+2016-01-23 18:25:05.754 (0x700000aa6000):   column[0]="Name of State or District of Columbia (group)_"
+2016-01-23 18:25:05.754 (0x700000aa6000):   column[1]="State_"
+2016-01-23 18:25:05.755 (0x700000ea9000): Session3: StatementPrepare: sess_guid=3 stmt_guid=10
+2016-01-23 18:25:05.755 (0x700000ea9000): (alter column [TEMP].[#Tableau_2_074A7A6B-20CF-4FFA-B58A-3B28E81CD56A_1_Group].[Name of State or District of Columbia (group)] ( ( "encoding" "encoding" ) ( "storagewidth" "0" ) ( "compression" "array" ) ( "comparable" "comparable" ) ) )
+2016-01-23 18:25:05.755 (0x700000aa6000): Session19: InsertGetColumnProperties:
+2016-01-23 18:25:05.755 (0x700000ea9000): Session3: StatementPrepare: OK
+2016-01-23 18:25:05.755 (0x700000ea9000): Session19: InsertGetColumnProperties:
+2016-01-23 18:25:05.755 (0x700000aa6000): Session3: StatementExecute: sess_guid=3 stmt_guid=10
+2016-01-23 18:25:05.755 (0x700000aa6000): Compiling query with Memory Budget=17179869184
+2016-01-23 18:25:05.756 (0x700000ea9000): Session19: InsertPutValues:
+2016-01-23 18:25:05.757 (0x700000ea9000): Session19: InsertCommit: insert_guid=4
+2016-01-23 18:25:05.758 (0x700000aa6000): Session3: StatementExecute: OK, Elapsed time:0.003s, Compilation time:0.000s, Execution time:0.003s
+2016-01-23 18:25:05.758 (0x700000aa6000): Session3: StatementClose: sess_guid=3 stmt_guid=10
+2016-01-23 18:25:05.760 (0x700000aa6000): Session3: StatementOpen:
+2016-01-23 18:25:05.760 (0x700000aa6000): Session3: StatementPrepare: sess_guid=3 stmt_guid=11
+2016-01-23 18:25:05.760 (0x700000aa6000): (alter column [TEMP].[#Tableau_2_074A7A6B-20CF-4FFA-B58A-3B28E81CD56A_1_Group].[State] ( ( "encoding" "encoding" ) ( "storagewidth" "0" ) ( "compression" "array" ) ( "comparable" "comparable" ) ) )
+2016-01-23 18:25:05.761 (0x700000aa6000): Session3: StatementPrepare: OK
+2016-01-23 18:25:05.761 (0x700000aa6000): Session3: StatementExecute: sess_guid=3 stmt_guid=11
+2016-01-23 18:25:05.761 (0x700000aa6000): Compiling query with Memory Budget=8589934592
+2016-01-23 18:25:05.761 (0x700000ea9000): Session19: InsertCommit: OK
+2016-01-23 18:25:05.762 (0x700000ea9000): Session19: StatementOpen:
+2016-01-23 18:25:05.762 (0x700000ea9000): Session19: StatementPrepare: sess_guid=19 stmt_guid=5
+2016-01-23 18:25:05.762 (0x700000ea9000): (alter column [TEMP].[View#0].[Name of State or District of Columbia (group)_] ( ( "encoding" "encoding" ) ( "storagewidth" "0" ) ( "compression" "array" ) ( "comparable" "comparable" ) ) )
+2016-01-23 18:25:05.763 (0x700000ea9000): Session19: StatementPrepare: OK
+2016-01-23 18:25:05.763 (0x700000ea9000): Session19: StatementExecute: sess_guid=19 stmt_guid=5
+2016-01-23 18:25:05.763 (0x700000ea9000): Compiling query with Memory Budget=8589934592
+2016-01-23 18:25:05.764 (0x700000ea9000): Session19: StatementExecute: OK, Elapsed time:0.002s, Compilation time:0.000s, Execution time:0.001s
+2016-01-23 18:25:05.765 (0x700000ea9000): Session19: StatementClose: sess_guid=19 stmt_guid=5
+2016-01-23 18:25:05.765 (0x700000ea9000): Session19: StatementOpen:
+2016-01-23 18:25:05.766 (0x700000ea9000): Session19: StatementPrepare: sess_guid=19 stmt_guid=6
+2016-01-23 18:25:05.766 (0x700000ea9000): (alter column [TEMP].[View#0].[State_] ( ( "encoding" "encoding" ) ( "storagewidth" "0" ) ( "compression" "array" ) ( "comparable" "comparable" ) ) )
+2016-01-23 18:25:05.766 (0x700000ea9000): Session19: StatementPrepare: OK
+2016-01-23 18:25:05.766 (0x700000ea9000): Session19: StatementExecute: sess_guid=19 stmt_guid=6
+2016-01-23 18:25:05.766 (0x700000ea9000): Compiling query with Memory Budget=8589934592
+2016-01-23 18:25:05.768 (0x700000aa6000): Session3: StatementExecute: OK, Elapsed time:0.007s, Compilation time:0.000s, Execution time:0.007s
+2016-01-23 18:25:05.769 (0x700000aa6000): Session3: StatementClose: sess_guid=3 stmt_guid=11
+2016-01-23 18:25:05.770 (0x700000ea9000): Session19: StatementExecute: OK, Elapsed time:0.003s, Compilation time:0.000s, Execution time:0.003s
+2016-01-23 18:25:05.770 (0x700000aa6000): Session3: InsertClose: insert_guid=9
+2016-01-23 18:25:05.770 (0x700000aa6000): Session3: InsertClose: OK
+2016-01-23 18:25:05.770 (0x700000ea9000): Session3: StatementOpen:
+2016-01-23 18:25:05.771 (0x700000aa6000): Session3: StatementPrepare: sess_guid=3 stmt_guid=12
+2016-01-23 18:25:05.771 (0x700000aa6000): (describe [TEMP].[#Tableau_2_074A7A6B-20CF-4FFA-B58A-3B28E81CD56A_1_Group])
+2016-01-23 18:25:05.771 (0x700000ea9000): Session19: StatementClose: sess_guid=19 stmt_guid=6
+2016-01-23 18:25:05.771 (0x700000aa6000): Session3: StatementPrepare: OK
+2016-01-23 18:25:05.773 (0x700000ea9000): Session19: InsertClose: insert_guid=4
+2016-01-23 18:25:05.773 (0x700000aa6000): Session3: StatementExecute: sess_guid=3 stmt_guid=12
+2016-01-23 18:25:05.773 (0x700000ea9000): Session19: InsertClose: OK
+2016-01-23 18:25:05.773 (0x700000aa6000): Compiling query with Memory Budget=8589934592
+2016-01-23 18:25:05.774 (0x700000ea9000): Session19: StatementOpen:
+2016-01-23 18:25:05.774 (0x700000ea9000): Session19: StatementPrepare: sess_guid=19 stmt_guid=7
+2016-01-23 18:25:05.774 (0x700000ea9000): (describe [TEMP].[View#0])
+2016-01-23 18:25:05.774 (0x700000aa6000): Session3: StatementExecute: OK rowset_guid=13 n_columns=2, Elapsed time:0.001s, Compilation time:0.000s, Execution time:0.001s
+2016-01-23 18:25:05.775 (0x700000ea9000): Session19: StatementPrepare: OK
+2016-01-23 18:25:05.775 (0x700000aa6000): Session19: StatementExecute: sess_guid=19 stmt_guid=7
+2016-01-23 18:25:05.775 (0x700000ea9000): Session3: StatementClose: sess_guid=3 stmt_guid=12
+2016-01-23 18:25:05.775 (0x700000aa6000): Compiling query with Memory Budget=17179869184
+2016-01-23 18:25:05.776 (0x700000ea9000): Session3: RowsetGetProperties:
+2016-01-23 18:25:05.776 (0x700000aa6000): Session19: StatementExecute: OK rowset_guid=8 n_columns=2, Elapsed time:0.001s, Compilation time:0.000s, Execution time:0.001s
+2016-01-23 18:25:05.776 (0x700000ea9000): Session3: RowsetClose:
+2016-01-23 18:25:05.776 (0x700000ea9000): Session19: StatementClose: sess_guid=19 stmt_guid=7
+2016-01-23 18:25:05.777 (0x700000aa6000): Session3: StatementOpen:
+2016-01-23 18:25:05.777 (0x700000ea9000): Session19: RowsetGetProperties:
+2016-01-23 18:25:05.778 (0x700000aa6000): Session19: RowsetClose:
+2016-01-23 18:25:05.778 (0x700000ea9000): Session3: StatementPrepare: sess_guid=3 stmt_guid=14
+2016-01-23 18:25:05.778 (0x700000ea9000): (sort [TEMP].[#Tableau_2_074A7A6B-20CF-4FFA-B58A-3B28E81CD56A_1_Group]
+2016-01-23 18:25:05.778 (0x700000ea9000):   ( ([Name of State or District of Columbia (group)] asc) ([State] asc) ) )
+2016-01-23 18:25:05.779 (0x700000ea9000): Session3: StatementPrepare: OK
+2016-01-23 18:25:05.779 (0x700000aa6000): Session3: StatementExecute: sess_guid=3 stmt_guid=14
+2016-01-23 18:25:05.779 (0x700000aa6000): Compiling query with Memory Budget=17179869184
+2016-01-23 18:25:05.781 (0x700000ea9000): Session19: StatementOpen:
+2016-01-23 18:25:05.782 (0x700000ea9000): Session19: StatementPrepare: sess_guid=19 stmt_guid=9
+2016-01-23 18:25:05.782 (0x700000ea9000): (sort [TEMP].[View#0]
+2016-01-23 18:25:05.782 (0x700000ea9000):   ( ([Name of State or District of Columbia (group)_] asc) ([State_] asc) ) )
+2016-01-23 18:25:05.782 (0x700000ea9000): Session19: StatementPrepare: OK
+2016-01-23 18:25:05.783 (0x700000ea9000): Session19: StatementExecute: sess_guid=19 stmt_guid=9
+2016-01-23 18:25:05.784 (0x700000ea9000): Compiling query with Memory Budget=8589934592
+2016-01-23 18:25:05.787 (0x700000aa6000): Session3: StatementExecute: OK, Elapsed time:0.008s, Compilation time:0.000s, Execution time:0.008s
+2016-01-23 18:25:05.788 (0x700000aa6000): Session3: StatementClose: sess_guid=3 stmt_guid=14
+2016-01-23 18:25:05.791 (0x700000aa6000): Session3: StatementOpen:
+2016-01-23 18:25:05.791 (0x700000ea9000): Session19: StatementExecute: OK, Elapsed time:0.008s, Compilation time:0.000s, Execution time:0.008s
+2016-01-23 18:25:05.792 (0x700000aa6000): Session3: StatementPrepare: sess_guid=3 stmt_guid=15
+2016-01-23 18:25:05.792 (0x700000aa6000): (describe [TEMP].[#Tableau_2_074A7A6B-20CF-4FFA-B58A-3B28E81CD56A_1_Group])
+2016-01-23 18:25:05.792 (0x700000ea9000): Session19: StatementClose: sess_guid=19 stmt_guid=9
+2016-01-23 18:25:05.793 (0x700000aa6000): Session3: StatementPrepare: OK
+2016-01-23 18:25:05.793 (0x700000aa6000): Session3: StatementExecute: sess_guid=3 stmt_guid=15
+2016-01-23 18:25:05.793 (0x700000aa6000): Compiling query with Memory Budget=17179869184
+2016-01-23 18:25:05.793 (0x700000aa6000): Session3: StatementExecute: OK rowset_guid=16 n_columns=2, Elapsed time:0.000s, Compilation time:0.000s, Execution time:0.000s
+2016-01-23 18:25:05.794 (0x700000ea9000): Session3: StatementClose: sess_guid=3 stmt_guid=15
+2016-01-23 18:25:05.794 (0x700000aa6000): Session3: RowsetGetProperties:
+2016-01-23 18:25:05.795 (0x700000ea9000): Session3: RowsetClose:
+2016-01-23 18:25:05.796 (0x700000aa6000): Session19: StatementOpen:
+2016-01-23 18:25:05.796 (0x700000ea9000): Session19: StatementPrepare: sess_guid=19 stmt_guid=10
+2016-01-23 18:25:05.796 (0x700000ea9000): (describe [TEMP].[View#0])
+2016-01-23 18:25:05.796 (0x700000ea9000): Session19: StatementPrepare: OK
+2016-01-23 18:25:05.797 (0x700000aa6000): Session19: StatementExecute: sess_guid=19 stmt_guid=10
+2016-01-23 18:25:05.797 (0x700000ea9000): Session3: StatementOpen:
+2016-01-23 18:25:05.797 (0x700000aa6000): Compiling query with Memory Budget=8589934592
+2016-01-23 18:25:05.797 (0x700000ea9000): Session3: StatementPrepare: sess_guid=3 stmt_guid=17
+2016-01-23 18:25:05.797 (0x700000ea9000): (restrict
+2016-01-23 18:25:05.797 (0x700000ea9000):   (aggregate
+2016-01-23 18:25:05.797 (0x700000ea9000):     (project
+2016-01-23 18:25:05.797 (0x700000ea9000):       (table [Extract].[Extract])
+2016-01-23 18:25:05.797 (0x700000ea9000):       (
+2016-01-23 18:25:05.797 (0x700000ea9000):         ([Name of State or District of Columbia (group)]
+2016-01-23 18:25:05.797 (0x700000ea9000):           (lookup
+2016-01-23 18:25:05.797 (0x700000ea9000):             (table [TEMP].[#Tableau_2_074A7A6B-20CF-4FFA-B58A-3B28E81CD56A_1_Group])
+2016-01-23 18:25:05.797 (0x700000ea9000):             ([State])
+2016-01-23 18:25:05.797 (0x700000ea9000):             ([State])
+2016-01-23 18:25:05.797 (0x700000ea9000):             [Name of State or District of Columbia (group)] (to_str null))
+2016-01-23 18:25:05.797 (0x700000ea9000):           )
+2016-01-23 18:25:05.797 (0x700000ea9000):         )
+2016-01-23 18:25:05.797 (0x700000ea9000):       )
+2016-01-23 18:25:05.797 (0x700000ea9000):     (
+2016-01-23 18:25:05.797 (0x700000ea9000):       ([Name of State or District of Columbia (group)] [Name of State or District of Columbia (group)])
+2016-01-23 18:25:05.797 (0x700000ea9000):       ([State] [State])
+2016-01-23 18:25:05.797 (0x700000ea9000):       )
+2016-01-23 18:25:05.797 (0x700000ea9000):     ()
+2016-01-23 18:25:05.797 (0x700000ea9000):     )
+2016-01-23 18:25:05.797 (0x700000ea9000):   ([Name of State or District of Columbia (group)] [State])
+2016-01-23 18:25:05.797 (0x700000ea9000):   )
+2016-01-23 18:25:05.797 (0x700000ea9000): 
+2016-01-23 18:25:05.798 (0x700000aa6000): Session19: StatementExecute: OK rowset_guid=11 n_columns=2, Elapsed time:0.001s, Compilation time:0.000s, Execution time:0.001s
+2016-01-23 18:25:05.798 (0x700000aa6000): Session19: StatementClose: sess_guid=19 stmt_guid=10
+2016-01-23 18:25:05.799 (0x700000aa6000): Session19: RowsetGetProperties:
+2016-01-23 18:25:05.799 (0x700000aa6000): Session19: RowsetClose:
+2016-01-23 18:25:05.809 (0x700000ea9000): TQLExpressionCompiler: Parsed: 6, Folded: 1
+2016-01-23 18:25:05.809 (0x700000ea9000): Compiling query with DOP=2
+2016-01-23 18:25:05.811 (0x700000ea9000): Session3: StatementPrepare: OK
+2016-01-23 18:25:05.812 (0x700000aa6000): Session3: StatementExecute: sess_guid=3 stmt_guid=17
+2016-01-23 18:25:05.812 (0x700000aa6000): Compiling query with Memory Budget=17179869184
+2016-01-23 18:25:05.816 (0x700000aa6000): Session3: StatementExecute: OK rowset_guid=18 n_columns=2, Elapsed time:0.018s, Compilation time:0.014s, Execution time:0.004s
+2016-01-23 18:25:05.817 (0x700000ea9000): Session3: StatementClose: sess_guid=3 stmt_guid=17
+2016-01-23 18:25:05.817 (0x700000aa6000): Session3: RowsetGetValues:
+2016-01-23 18:25:05.818 (0x700000ea9000): Session3: RowsetGetValues:
+2016-01-23 18:25:05.819 (0x700000aa6000): Session3: RowsetClose:
+2016-01-23 18:25:05.821 (0x700000ea9000): Session19: StatementOpen:
+2016-01-23 18:25:05.822 (0x700000aa6000): Session19: StatementPrepare: sess_guid=19 stmt_guid=12
+2016-01-23 18:25:05.822 (0x700000aa6000): (create table [TEMP].[View#1])
+2016-01-23 18:25:05.822 (0x700000aa6000): Session19: StatementPrepare: OK
+2016-01-23 18:25:05.822 (0x700000ea9000): Session19: StatementExecute: sess_guid=19 stmt_guid=12
+2016-01-23 18:25:05.822 (0x700000ea9000): Compiling query with Memory Budget=17179869184
+2016-01-23 18:25:05.822 (0x700000ea9000): Session19: StatementExecute: OK, Elapsed time:0.000s, Compilation time:0.000s, Execution time:0.000s
+2016-01-23 18:25:05.823 (0x700000aa6000): Session19: StatementClose: sess_guid=19 stmt_guid=12
+2016-01-23 18:25:05.823 (0x700000ea9000): Session19: StatementOpen:
+2016-01-23 18:25:05.824 (0x700000aa6000): Session19: StatementPrepare: sess_guid=19 stmt_guid=13
+2016-01-23 18:25:05.824 (0x700000aa6000): (create column [TEMP].[View#1].[Name of State or District of Columbia (group)_] ( ( "collation" "binary" ) ( "compression" "heap" ) ( "factory" "varchar" ) ( "ordinal" "0" ) ( "precision" "11" ) ( "scale" "1" ) ( "storagewidth" "8" ) ) )
+2016-01-23 18:25:05.825 (0x700000aa6000): Session19: StatementPrepare: OK
+2016-01-23 18:25:05.825 (0x700000ea9000): Session19: StatementExecute: sess_guid=19 stmt_guid=13
+2016-01-23 18:25:05.825 (0x700000ea9000): Compiling query with Memory Budget=17179869184
+2016-01-23 18:25:05.827 (0x700000ea9000): Session19: StatementExecute: OK, Elapsed time:0.002s, Compilation time:0.000s, Execution time:0.002s
+2016-01-23 18:25:05.827 (0x700000aa6000): Session19: StatementClose: sess_guid=19 stmt_guid=13
+2016-01-23 18:25:05.827 (0x700000ea9000): Session19: StatementOpen:
+2016-01-23 18:25:05.828 (0x700000aa6000): Session19: StatementPrepare: sess_guid=19 stmt_guid=14
+2016-01-23 18:25:05.828 (0x700000aa6000): (create column [TEMP].[View#1].[State_] ( ( "collation" "binary" ) ( "compression" "heap" ) ( "factory" "varchar" ) ( "ordinal" "1" ) ( "precision" "14" ) ( "scale" "1" ) ( "storagewidth" "8" ) ) )
+2016-01-23 18:25:05.828 (0x700000aa6000): Session19: StatementPrepare: OK
+2016-01-23 18:25:05.828 (0x700000ea9000): Session19: StatementExecute: sess_guid=19 stmt_guid=14
+2016-01-23 18:25:05.828 (0x700000ea9000): Compiling query with Memory Budget=17179869184
+2016-01-23 18:25:05.830 (0x700000ea9000): Session19: StatementExecute: OK, Elapsed time:0.002s, Compilation time:0.000s, Execution time:0.002s
+2016-01-23 18:25:05.830 (0x700000aa6000): Session19: StatementClose: sess_guid=19 stmt_guid=14
+2016-01-23 18:25:05.831 (0x700000ea9000): Session19: InsertOpen: table="View#1 schema="TEMP"
+2016-01-23 18:25:05.831 (0x700000ea9000):   column[0]="Name of State or District of Columbia (group)_"
+2016-01-23 18:25:05.831 (0x700000ea9000):   column[1]="State_"
+2016-01-23 18:25:05.833 (0x700000aa6000): Session19: InsertGetColumnProperties:
+2016-01-23 18:25:05.833 (0x700000ea9000): Session19: InsertGetColumnProperties:
+2016-01-23 18:25:05.834 (0x700000aa6000): Session19: InsertPutValues:
+2016-01-23 18:25:05.834 (0x700000ea9000): Session19: InsertCommit: insert_guid=15
+2016-01-23 18:25:05.839 (0x700000ea9000): Session19: InsertCommit: OK
+2016-01-23 18:25:05.840 (0x700000aa6000): Session19: StatementOpen:
+2016-01-23 18:25:05.841 (0x700000ea9000): Session19: StatementPrepare: sess_guid=19 stmt_guid=16
+2016-01-23 18:25:05.841 (0x700000ea9000): (alter column [TEMP].[View#1].[Name of State or District of Columbia (group)_] ( ( "encoding" "encoding" ) ( "storagewidth" "0" ) ( "compression" "array" ) ( "comparable" "comparable" ) ) )
+2016-01-23 18:25:05.841 (0x700000ea9000): Session19: StatementPrepare: OK
+2016-01-23 18:25:05.841 (0x700000aa6000): Session19: StatementExecute: sess_guid=19 stmt_guid=16
+2016-01-23 18:25:05.841 (0x700000aa6000): Compiling query with Memory Budget=17179869184
+2016-01-23 18:25:05.843 (0x700000aa6000): Session19: StatementExecute: OK, Elapsed time:0.002s, Compilation time:0.000s, Execution time:0.001s
+2016-01-23 18:25:05.843 (0x700000ea9000): Session19: StatementClose: sess_guid=19 stmt_guid=16
+2016-01-23 18:25:05.843 (0x700000aa6000): Session19: StatementOpen:
+2016-01-23 18:25:05.844 (0x700000ea9000): Session19: StatementPrepare: sess_guid=19 stmt_guid=17
+2016-01-23 18:25:05.844 (0x700000ea9000): (alter column [TEMP].[View#1].[State_] ( ( "encoding" "encoding" ) ( "storagewidth" "0" ) ( "compression" "array" ) ( "comparable" "comparable" ) ) )
+2016-01-23 18:25:05.844 (0x700000ea9000): Session19: StatementPrepare: OK
+2016-01-23 18:25:05.844 (0x700000aa6000): Session19: StatementExecute: sess_guid=19 stmt_guid=17
+2016-01-23 18:25:05.844 (0x700000aa6000): Compiling query with Memory Budget=17179869184
+2016-01-23 18:25:05.846 (0x700000aa6000): Session19: StatementExecute: OK, Elapsed time:0.002s, Compilation time:0.000s, Execution time:0.002s
+2016-01-23 18:25:05.846 (0x700000ea9000): Session19: StatementClose: sess_guid=19 stmt_guid=17
+2016-01-23 18:25:05.847 (0x700000aa6000): Session19: InsertClose: insert_guid=15
+2016-01-23 18:25:05.847 (0x700000aa6000): Session19: InsertClose: OK
+2016-01-23 18:25:05.848 (0x700000ea9000): Session19: StatementOpen:
+2016-01-23 18:25:05.849 (0x700000aa6000): Session19: StatementPrepare: sess_guid=19 stmt_guid=18
+2016-01-23 18:25:05.849 (0x700000aa6000): (describe [TEMP].[View#1])
+2016-01-23 18:25:05.849 (0x700000aa6000): Session19: StatementPrepare: OK
+2016-01-23 18:25:05.849 (0x700000ea9000): Session19: StatementExecute: sess_guid=19 stmt_guid=18
+2016-01-23 18:25:05.849 (0x700000ea9000): Compiling query with Memory Budget=17179869184
+2016-01-23 18:25:05.849 (0x700000ea9000): Session19: StatementExecute: OK rowset_guid=19 n_columns=2, Elapsed time:0.000s, Compilation time:0.000s, Execution time:0.000s
+2016-01-23 18:25:05.850 (0x700000aa6000): Session19: StatementClose: sess_guid=19 stmt_guid=18
+2016-01-23 18:25:05.850 (0x700000ea9000): Session19: RowsetGetProperties:
+2016-01-23 18:25:05.851 (0x700000aa6000): Session19: RowsetClose:
+2016-01-23 18:25:05.851 (0x700000ea9000): Session19: StatementOpen:
+2016-01-23 18:25:05.852 (0x700000aa6000): Session19: StatementPrepare: sess_guid=19 stmt_guid=20
+2016-01-23 18:25:05.852 (0x700000aa6000): (sort [TEMP].[View#1]
+2016-01-23 18:25:05.852 (0x700000aa6000):   ( ([Name of State or District of Columbia (group)_] asc) ([State_] asc) ) )
+2016-01-23 18:25:05.852 (0x700000aa6000): Session19: StatementPrepare: OK
+2016-01-23 18:25:05.852 (0x700000ea9000): Session19: StatementExecute: sess_guid=19 stmt_guid=20
+2016-01-23 18:25:05.852 (0x700000ea9000): Compiling query with Memory Budget=17179869184
+2016-01-23 18:25:05.857 (0x700000ea9000): Session19: StatementExecute: OK, Elapsed time:0.005s, Compilation time:0.000s, Execution time:0.005s
+2016-01-23 18:25:05.858 (0x700000aa6000): Session19: StatementClose: sess_guid=19 stmt_guid=20
+2016-01-23 18:25:05.859 (0x700000ea9000): Session19: StatementOpen:
+2016-01-23 18:25:05.859 (0x700000aa6000): Session19: StatementPrepare: sess_guid=19 stmt_guid=21
+2016-01-23 18:25:05.859 (0x700000aa6000): (describe [TEMP].[View#1])
+2016-01-23 18:25:05.860 (0x700000aa6000): Session19: StatementPrepare: OK
+2016-01-23 18:25:05.860 (0x700000ea9000): Session19: StatementExecute: sess_guid=19 stmt_guid=21
+2016-01-23 18:25:05.860 (0x700000ea9000): Compiling query with Memory Budget=17179869184
+2016-01-23 18:25:05.860 (0x700000ea9000): Session19: StatementExecute: OK rowset_guid=22 n_columns=2, Elapsed time:0.000s, Compilation time:0.000s, Execution time:0.000s
+2016-01-23 18:25:05.860 (0x700000aa6000): Session19: StatementClose: sess_guid=19 stmt_guid=21
+2016-01-23 18:25:05.861 (0x700000ea9000): Session19: RowsetGetProperties:
+2016-01-23 18:25:05.861 (0x700000aa6000): Session19: RowsetClose:
+2016-01-23 18:25:10.877 (0x700000ea9000): Session1: QueryExecute:
+2016-01-23 18:25:10.877 (0x700000ea9000): (database null)
+2016-01-23 18:25:10.877 (0x700000ea9000): Compiling query with Memory Budget=17179869184
+2016-01-23 18:25:10.877 (0x700000ea9000): Session1: QueryExecute: OK, Elapsed time:0.000s, Compilation time:0.000s, Execution time:0.000s
+2016-01-23 18:25:10.877 (0x7000012ac000): tdeserver: close session, connection=::1:60767->::1:60769, sess_guid=1
+2016-01-23 18:25:10.877 (0x700000aa6000): Session2: QueryExecute:
+2016-01-23 18:25:10.877 (0x700000aa6000): (database null)
+2016-01-23 18:25:10.877 (0x700000aa6000): Compiling query with Memory Budget=17179869184
+2016-01-23 18:25:10.877 (0x700000aa6000): Session2: QueryExecute: OK, Elapsed time:0.000s, Compilation time:0.000s, Execution time:0.000s
+2016-01-23 18:25:10.878 (0x7000012ac000): tdeserver: close session, connection=::1:60767->::1:60769, sess_guid=2
+2016-01-23 18:25:10.879 (0x700000ea9000): Session13: QueryExecute:
+2016-01-23 18:25:10.879 (0x700000ea9000): (database null)
+2016-01-23 18:25:10.880 (0x700000ea9000): Compiling query with Memory Budget=17179869184
+2016-01-23 18:25:10.880 (0x700000ea9000): Session13: QueryExecute: OK, Elapsed time:0.001s, Compilation time:0.000s, Execution time:0.001s
+2016-01-23 18:25:10.880 (0x7000012ac000): tdeserver: close session, connection=::1:60767->::1:60769, sess_guid=13
+2016-01-23 18:25:10.881 (0x700000aa6000): Session14: QueryExecute:
+2016-01-23 18:25:10.881 (0x700000aa6000): (database null)
+2016-01-23 18:25:10.881 (0x700000aa6000): Compiling query with Memory Budget=17179869184
+2016-01-23 18:25:10.881 (0x700000aa6000): Session14: QueryExecute: OK, Elapsed time:0.000s, Compilation time:0.000s, Execution time:0.000s
+2016-01-23 18:25:10.881 (0x7000012ac000): tdeserver: close session, connection=::1:60767->::1:60769, sess_guid=14
+2016-01-23 18:25:10.882 (0x700000ea9000): Session15: QueryExecute:
+2016-01-23 18:25:10.882 (0x700000ea9000): (database null)
+2016-01-23 18:25:10.882 (0x700000ea9000): Compiling query with Memory Budget=17179869184
+2016-01-23 18:25:10.882 (0x700000ea9000): Session15: QueryExecute: OK, Elapsed time:0.000s, Compilation time:0.000s, Execution time:0.000s
+2016-01-23 18:25:10.882 (0x7000012ac000): tdeserver: close session, connection=::1:60767->::1:60769, sess_guid=15
+2016-01-23 18:25:10.882 (0x700000aa6000): Session17: QueryExecute:
+2016-01-23 18:25:10.882 (0x700000aa6000): (database null)
+2016-01-23 18:25:10.882 (0x700000aa6000): Compiling query with Memory Budget=17179869184
+2016-01-23 18:25:10.882 (0x700000aa6000): Session17: QueryExecute: OK, Elapsed time:0.000s, Compilation time:0.000s, Execution time:0.000s
+2016-01-23 18:25:10.882 (0x7000012ac000): tdeserver: close session, connection=::1:60767->::1:60769, sess_guid=17
+2016-01-23 18:25:10.883 (0x700000ea9000): Session3: QueryExecute:
+2016-01-23 18:25:10.883 (0x700000ea9000): (database null)
+2016-01-23 18:25:10.884 (0x700000ea9000): Compiling query with Memory Budget=17179869184
+2016-01-23 18:25:10.884 (0x700000ea9000): Session3: QueryExecute: OK, Elapsed time:0.001s, Compilation time:0.000s, Execution time:0.001s
+2016-01-23 18:25:10.884 (0x7000012ac000): tdeserver: close session, connection=::1:60767->::1:60769, sess_guid=3
+2016-01-23 18:25:10.885 (0x700000aa6000): Session4: QueryExecute:
+2016-01-23 18:25:10.885 (0x700000aa6000): (database null)
+2016-01-23 18:25:10.885 (0x700000aa6000): Compiling query with Memory Budget=17179869184
+2016-01-23 18:25:10.885 (0x700000aa6000): Session4: QueryExecute: OK, Elapsed time:0.000s, Compilation time:0.000s, Execution time:0.000s
+2016-01-23 18:25:10.885 (0x7000012ac000): tdeserver: close session, connection=::1:60767->::1:60769, sess_guid=4
+2016-01-23 18:25:10.885 (0x700000ea9000): Session16: QueryExecute:
+2016-01-23 18:25:10.885 (0x700000ea9000): (database null)
+2016-01-23 18:25:10.886 (0x700000ea9000): Compiling query with Memory Budget=17179869184
+2016-01-23 18:25:10.886 (0x700000ea9000): Session16: QueryExecute: OK, Elapsed time:0.000s, Compilation time:0.000s, Execution time:0.000s
+2016-01-23 18:25:10.886 (0x7000012ac000): tdeserver: close session, connection=::1:60767->::1:60769, sess_guid=16
+2016-01-23 18:25:10.886 (0x700000aa6000): Session18: QueryExecute:
+2016-01-23 18:25:10.886 (0x700000aa6000): (database null)
+2016-01-23 18:25:10.886 (0x700000aa6000): Compiling query with Memory Budget=17179869184
+2016-01-23 18:25:10.886 (0x700000aa6000): Session18: QueryExecute: OK, Elapsed time:0.000s, Compilation time:0.000s, Execution time:0.000s
+2016-01-23 18:25:10.886 (0x7000012ac000): tdeserver: close session, connection=::1:60767->::1:60769, sess_guid=18
+2016-01-23 18:25:10.888 (0x700000ea9000): Session19: QueryExecute:
+2016-01-23 18:25:10.888 (0x700000ea9000): (database null)
+2016-01-23 18:25:10.889 (0x700000ea9000): Compiling query with Memory Budget=17179869184
+2016-01-23 18:25:10.889 (0x700000ea9000): Session19: QueryExecute: OK, Elapsed time:0.001s, Compilation time:0.000s, Execution time:0.001s
+2016-01-23 18:25:10.890 (0x7000012ac000): tdeserver: close session, connection=::1:60767->::1:60769, sess_guid=19
+2016-01-23 18:25:10.890 (0x700000aa6000): Session20: QueryExecute:
+2016-01-23 18:25:10.890 (0x700000aa6000): (database null)
+2016-01-23 18:25:10.890 (0x700000aa6000): Compiling query with Memory Budget=17179869184
+2016-01-23 18:25:10.890 (0x700000aa6000): Session20: QueryExecute: OK, Elapsed time:0.000s, Compilation time:0.000s, Execution time:0.000s
+2016-01-23 18:25:10.890 (0x7000012ac000): tdeserver: close session, connection=::1:60767->::1:60769, sess_guid=20
+2016-01-23 18:25:10.891 (0x700000ea9000): Session5: QueryExecute:
+2016-01-23 18:25:10.891 (0x700000ea9000): (database null)
+2016-01-23 18:25:10.892 (0x700000ea9000): Compiling query with Memory Budget=17179869184
+2016-01-23 18:25:10.892 (0x700000ea9000): Session5: QueryExecute: OK, Elapsed time:0.000s, Compilation time:0.000s, Execution time:0.000s
+2016-01-23 18:25:10.892 (0x7000012ac000): tdeserver: close session, connection=::1:60767->::1:60769, sess_guid=5
+2016-01-23 18:25:10.892 (0x700000aa6000): Session6: QueryExecute:
+2016-01-23 18:25:10.892 (0x700000aa6000): (database null)
+2016-01-23 18:25:10.892 (0x700000aa6000): Compiling query with Memory Budget=17179869184
+2016-01-23 18:25:10.892 (0x700000aa6000): Session6: QueryExecute: OK, Elapsed time:0.000s, Compilation time:0.000s, Execution time:0.000s
+2016-01-23 18:25:10.892 (0x7000012ac000): tdeserver: close session, connection=::1:60767->::1:60769, sess_guid=6
+2016-01-23 18:25:10.893 (0x700000ea9000): Session7: QueryExecute:
+2016-01-23 18:25:10.893 (0x700000ea9000): (database null)
+2016-01-23 18:25:10.894 (0x700000ea9000): Compiling query with Memory Budget=17179869184
+2016-01-23 18:25:10.894 (0x700000ea9000): Session7: QueryExecute: OK, Elapsed time:0.000s, Compilation time:0.000s, Execution time:0.000s
+2016-01-23 18:25:10.894 (0x7000012ac000): tdeserver: close session, connection=::1:60767->::1:60769, sess_guid=7
+2016-01-23 18:25:10.894 (0x700000aa6000): Session8: QueryExecute:
+2016-01-23 18:25:10.894 (0x700000aa6000): (database null)
+2016-01-23 18:25:10.894 (0x700000aa6000): Compiling query with Memory Budget=17179869184
+2016-01-23 18:25:10.894 (0x700000aa6000): Session8: QueryExecute: OK, Elapsed time:0.000s, Compilation time:0.000s, Execution time:0.000s
+2016-01-23 18:25:10.894 (0x7000012ac000): tdeserver: close session, connection=::1:60767->::1:60769, sess_guid=8
+2016-01-23 18:25:10.895 (0x700000ea9000): Session9: QueryExecute:
+2016-01-23 18:25:10.895 (0x700000ea9000): (database null)
+2016-01-23 18:25:10.895 (0x700000ea9000): Compiling query with Memory Budget=17179869184
+2016-01-23 18:25:10.895 (0x700000ea9000): Session9: QueryExecute: OK, Elapsed time:0.000s, Compilation time:0.000s, Execution time:0.000s
+2016-01-23 18:25:10.896 (0x7000012ac000): tdeserver: close session, connection=::1:60767->::1:60769, sess_guid=9
+2016-01-23 18:25:10.896 (0x700000aa6000): Session10: QueryExecute:
+2016-01-23 18:25:10.896 (0x700000aa6000): (database null)
+2016-01-23 18:25:10.896 (0x700000aa6000): Compiling query with Memory Budget=17179869184
+2016-01-23 18:25:10.896 (0x700000aa6000): Session10: QueryExecute: OK, Elapsed time:0.000s, Compilation time:0.000s, Execution time:0.000s
+2016-01-23 18:25:10.896 (0x7000012ac000): tdeserver: close session, connection=::1:60767->::1:60769, sess_guid=10
+2016-01-23 18:25:10.897 (0x700000ea9000): Session11: QueryExecute:
+2016-01-23 18:25:10.897 (0x700000ea9000): (database null)
+2016-01-23 18:25:10.897 (0x700000ea9000): Compiling query with Memory Budget=17179869184
+2016-01-23 18:25:10.897 (0x700000ea9000): Session11: QueryExecute: OK, Elapsed time:0.000s, Compilation time:0.000s, Execution time:0.000s
+2016-01-23 18:25:10.897 (0x7000012ac000): tdeserver: close session, connection=::1:60767->::1:60769, sess_guid=11
+2016-01-23 18:25:10.897 (0x700000aa6000): Session12: QueryExecute:
+2016-01-23 18:25:10.897 (0x700000aa6000): (database null)
+2016-01-23 18:25:10.897 (0x700000aa6000): Compiling query with Memory Budget=17179869184
+2016-01-23 18:25:10.897 (0x700000aa6000): Session12: QueryExecute: OK, Elapsed time:0.000s, Compilation time:0.000s, Execution time:0.000s
+2016-01-23 18:25:10.898 (0x7000012ac000): tdeserver: close session, connection=::1:60767->::1:60769, sess_guid=12
+2016-01-23 18:25:10.899 (0x7000012ac000): tdeserver: client disconnected
+2016-01-23 18:25:10.899 (0x7000012ac000): tdeserver: closing connection, connection=::1:60767->::1:60769
+2016-01-23 18:25:10.899 (0x7000016af000): endthread: send, connection=::1:60767->::1:60769
+2016-01-23 18:25:10.899 (0x7000012ac000): endthread: recv, connection=::1:60767->::1:60769
+2016-01-23 18:25:11.596 (0x7fff750ff000): tdeserver: exit (0)
